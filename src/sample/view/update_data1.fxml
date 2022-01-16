@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="430.0" prefWidth="654.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.updateDataController">
+   <children>
+      <HBox prefHeight="215.0" prefWidth="654.0">
+         <children>
+            <TableView fx:id="tblShowJadwal" onMouseClicked="#onTableClicked" prefHeight="215.0" prefWidth="654.0">
+              <columns>
+                  <TableColumn fx:id="matkulCol" prefWidth="135.0" text="NAMA MAHASISWA" />
+                  <TableColumn fx:id="gkbCol" prefWidth="79.0" text="NOMOR RAK" />
+                  <TableColumn fx:id="ruangCol" prefWidth="53.0" text="ID BUKU" />
+                  <TableColumn fx:id="dosenCol" prefWidth="224.0" text="JUDUL BUKU" />
+                  <TableColumn fx:id="waktuCol" minWidth="0.0" prefWidth="136.0" text="WAKTU PEMINJAMAN" />
+              </columns>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </TableView>
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </HBox>
+      <AnchorPane prefHeight="215.0" prefWidth="654.0">
+         <children>
+            <VBox prefHeight="215.0" prefWidth="680.0">
+               <children>
+                  <HBox alignment="CENTER" layoutX="30.0" layoutY="30.0" prefHeight="30.0" prefWidth="654.0" spacing="15.0">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="30.0" layoutY="70.0" prefHeight="30.0" prefWidth="654.0" spacing="15.0">
+                     <children>
+                        <TextField fx:id="ID_Queue" prefHeight="30.0" prefWidth="260.0" promptText="ID BUKU" />
+                        <TextField fx:id="NamaTXT" prefHeight="30.0" prefWidth="260.0" promptText="ID BUKU" />
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="30.0" layoutY="90.0" prefHeight="30.0" prefWidth="654.0" spacing="15.0">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="BOTTOM_CENTER" layoutX="30.0" layoutY="130.0" prefHeight="30.0" prefWidth="654.0" spacing="15.0">
+                     <children>
+                        <JFXButton fx:id="buttonUpdate" onAction="#onButtonUpdateClicked" prefHeight="30.0" prefWidth="181.0" style="-fx-background-color: #f4511e;" text="UPDATE" textFill="WHITE" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

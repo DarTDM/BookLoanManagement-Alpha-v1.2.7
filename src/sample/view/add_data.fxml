@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="addDataLayout" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="430.0" prefWidth="654.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.addDataController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="215.0" spacing="20.0">
+         <children>
+            <TextField fx:id="textFieldMatkul" prefHeight="35.0" prefWidth="300.0" promptText="NAMA MAHASISWA" />
+            <TextField fx:id="textfieldGKB" layoutX="30.0" layoutY="20.0" prefHeight="35.0" prefWidth="300.0" promptText="NOMOR RAK (0~22)" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+         <children>
+            <TextField fx:id="textfieldRUANG" prefHeight="35.0" prefWidth="300.0" promptText="ID BUKU (0~1351)" />
+            <TextField fx:id="textfieldDOSEN" layoutX="30.0" layoutY="20.0" prefHeight="35.0" prefWidth="300.0" promptText="JUDUL BUKU" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="10.0" layoutY="110.0" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+         <children>
+            <TextField fx:id="textfieldWAKTU" prefHeight="35.0" prefWidth="300.0" promptText="WAKTU PEMINJAMAN (fHH:MM:SS)" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="10.0" layoutY="210.0" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+         <children>
+            <JFXButton fx:id="buttonAdd" onAction="#OnButtonAddClicked" prefHeight="30.0" prefWidth="150.0" style="-fx-background-color: #ff7043;" text="ADD" textFill="WHITE" />
+         </children>
+      </HBox>
+   </children>
+</VBox>

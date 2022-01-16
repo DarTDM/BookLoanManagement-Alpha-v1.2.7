@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="borderPaneMainLayout" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="854.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.mainController">
+   <top>
+      <AnchorPane prefHeight="50.0" prefWidth="1366.0" style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER">
+         <children>
+            <HBox fx:id="hBoxMenus" prefHeight="50.0" prefWidth="230.0" style="-fx-background-color: #b22222;">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="Book Loan Management" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets left="20.0" top="13.0" />
+               </padding>
+               
+                  </HBox>
+            <HBox layoutX="219.0" prefHeight="50.0" prefWidth="635.0" style="-fx-background-color: #7C0A02;">
+               <children>
+                  <Label fx:id="labelSceneTitle" prefHeight="21.0" prefWidth="322.0" text="Selamat Datang di Book Loan Management" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets left="20.0" top="13.0" />
+               </padding>
+            </HBox>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+
+      </AnchorPane>
+   </top>
+   <left>
+      <VBox prefHeight="200.0" prefWidth="219.0" style="-fx-background-color: #7C0A02;" BorderPane.alignment="CENTER">
+         <children>
+            <JFXButton fx:id="buttonShowData" onAction="#onButtonShowData" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: #b22222;" text="Show Data" textFill="WHITE">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </JFXButton>
+            <JFXButton fx:id="buttonAddData" layoutX="10.0" layoutY="10.0" onAction="#onButtonAddClicked" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: #b22222;" text="Add Data" textFill="WHITE">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </JFXButton>
+            <JFXButton fx:id="buttonUpdateData" layoutX="10.0" layoutY="35.0" onAction="#onButtonUpdateData" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: #b22222;" text="Update Data" textFill="WHITE">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </JFXButton>
+            <JFXButton fx:id="buttonDeleteData" layoutX="1060.0" onAction="#onButtonDeleteData" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: #b22222;" text="Delete Data" textFill="WHITE">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </JFXButton>
+            <VBox alignment="CENTER" prefHeight="223.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="220.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@umm.png" />
+                     </image></ImageView>
+               </children>
+            </VBox>
+            <VBox alignment="BOTTOM_CENTER" prefHeight="7.0" prefWidth="200.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="32.0" prefWidth="137.0" text="Ahmad Chaidar Isat | 525" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+   </left>
+</BorderPane>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="430.0" prefWidth="654.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.tableDataController">
+   <children>
+      <VBox fx:id="vboxRightLayout" prefHeight="430.0" prefWidth="654.0">
+         <children>
+            <TableView fx:id="tblShowJadwal" prefHeight="430.0" prefWidth="654.0">
+               <columns>
+                  <TableColumn fx:id="matkulCol" prefWidth="172.0" text="NAMA MAHASISWA" />
+                  <TableColumn fx:id="gkbCol" prefWidth="83.0" text="NOMOR RAK" />
+                  <TableColumn fx:id="ruangCol" prefWidth="55.0" text="ID BUKU" />
+                  <TableColumn fx:id="dosenCol" prefWidth="191.0" text="JUDUL BUKU" />
+                  <TableColumn fx:id="waktuCol" minWidth="0.0" prefWidth="120.0" text="WAKTU PINJAM" />
+               </columns>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </TableView>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>
