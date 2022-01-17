@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane fx:id="borderPaneMainLayout" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="854.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.mainController">
+<BorderPane fx:id="borderPaneMainLayout" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="854.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.mainController">
    <top>
       <AnchorPane prefHeight="50.0" prefWidth="1366.0" style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER">
          <children>
@@ -74,13 +74,13 @@
                <children>
                   <ImageView fitHeight="220.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@umm.png" />
+                        <Image url="@logo.png" />
                      </image></ImageView>
                </children>
             </VBox>
             <VBox alignment="BOTTOM_CENTER" prefHeight="7.0" prefWidth="200.0">
                <children>
-                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="32.0" prefWidth="137.0" text="Ahmad Chaidar Isat | 525" textAlignment="CENTER" textFill="WHITE">
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="32.0" prefWidth="137.0" text="Chaidar ©2021" textAlignment="CENTER" textFill="WHITE">
                      <font>
                         <Font size="10.0" />
                      </font>
